@@ -14,12 +14,10 @@ public class MainActivity extends AppCompatActivity {
     private Button mButtonBottom;
     private int mStage;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         // TODO: Step 5 - Wire up the 3 views from the layout to the member variables:
         mStoryTextView = (TextView) findViewById(R.id.storyTextView);
@@ -31,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             mStage = 1;
         }
-
         showStage(mStage);
 
         // TODO: Steps 6, 7, & 9 - Set a listener on the top button:
@@ -61,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 showStage(mStage);
             }
         });
-
     }
 
     private void showStage(int stage) {
